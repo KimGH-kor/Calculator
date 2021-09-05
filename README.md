@@ -1,5 +1,5 @@
 # Calculator
-HTMLとCSSをるかって計算機をつくりました。
+HTMLとCSSを使って計算機をつくりました。
 <br>
 HTML과 CSS를 이용해 계산기를 만들어 보았습니다.
 <br>
