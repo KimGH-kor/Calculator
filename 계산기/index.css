@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Calculator{
+    border: solid 1px #333;
+    background-color: #ccc;
+    padding: 5px;
+    width: 287px;
+}
+
+.Calculator form{
+    display: grid;
+    /* 그리드 열 몇개로 나누고 몇 픽셀인지 */
+    grid-template-columns: repeat(4,65px);
+    /* 행의 높이 */
+    grid-auto-rows: 65px;
+    grid-gap: 5px;
+}
+
+.Calculator form input{
+    border:2px solid #333;
+    cursor: pointer;
+    font-size : 20px;
+}
+
+.Calculator form input:hover{
+    box-shadow: 1px 1px 2px #333;
+}
+
+.Calculator form .clear{
+    background-color: #ed4848;
+}
+
+.Calculator form .operator{
+    background-color: orange;
+}
+
+.Calculator form .dot{
+    background-color: green;
+}
+
+.Calculator form input[type='text']{
+    grid-column:span 4;
+    text-align: end;
+    padding: 0 10px;
+}
+
+.Calculator form .clear{
+    grid-column: span 3;
+}
+
+.Calculator form .result{
+    grid-column: span 2;
+}
